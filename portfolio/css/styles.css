@@ -1,0 +1,236 @@
+
+:root {
+
+    --fondo: rgb(58, 20, 58);
+    --degradado: linear-gradient(rgb(239, 85, 180),rgb(42, 9, 141));
+
+}
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    background: var(--fondo);
+}
+
+
+/******             FRENTE             ******/
+/*
+
+.marco1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 73.5vh;
+    width: 73.5vh;
+    background: var(--degradado);
+    border-radius: 100%;
+}
+
+.marco2 {
+    height: 81vh;
+    width: 81vh;
+    /*border-radius: 80%;*/
+/*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.luz {
+    height: 84.5vh;
+    width: 10vh;
+    background: var(--degradado
+    );
+    /*border-radius: 100%;*/
+/*    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotation 9s infinite linear;
+}
+
+@keyframes rotation{
+    from{transform: rotate(0deg);
+    }
+    to {transform: rotate(360deg);
+    }
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
+.cosa {
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cosa2 {
+    background: white;
+}
+*//*
+.foto_perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 70vh;
+    border-radius: 100%;
+}
+/*
+.texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    font-size: 50px;
+    background: tomato;
+}
+
+/******             DORSO             ******/
+/*.cosa:hover {
+    opacity: 0;
+    background: yellow;
+}
+
+.cosa2:hover {
+    opacity: 1;
+    width: 50px;
+    background: green;
+}
+*/
+
+.imgfoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 70vh;
+    border-radius: 100%;
+    z-index: 3;
+}
+
+
+.centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15.9%;
+    margin-left: 19.9%;
+    height: 70vh;
+    width: 70vh;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+}
+
+.fijo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13.5%;
+    margin-left: 17.5%;
+    background: var(--degradado);
+    height: 75vh;
+    width: 75vh;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+
+ .espaciado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8.5%; 
+    margin-left: 12.5%;
+    height: 85vh;
+    width: 85vh;
+    border-radius: 100%;
+    z-index: 1;
+    position: absolute;
+}
+
+
+.gira {
+    margin-top: 6%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--degradado);
+    height: 90vh;
+    width: 90vh;
+    border-radius: 100%;
+    position: absolute;
+    
+}
+
+.rotar {
+    margin-top: 1%;
+    margin-left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vh;
+    height: 100vh;
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+    from{
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+
+.textos {
+    line-height: 45px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.texto1 {
+    font-size: 45px;
+}
+
+.texto2 {
+    font-size: 25px;
+}
+
+.btn {
+    margin-top: 15px;
+    line-height: 50px;
+    width: 25vh;
+    font-size: 25px;
+    background: white;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.btn a {
+    color: black;
+    background: none;
+}
+
+.centro:hover {
+    opacity: 1;
+}

@@ -1,0 +1,77 @@
+/******     Boton de Volver     ******/
+
+#cont_luces_fijas  /*contenedor de luces giratorias fijas*/
+{
+    margin-top: 82vh;
+    margin-right: 180vh;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background: var(--fondo);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#cont_luces_fijas::before  /*luces giratorias*/
+{
+    content: "";
+    position: absolute;
+    inset: 0px ;
+    background: var(--degradado);
+    transition: 0.5s;
+    animation: animate 1s infinite linear;
+}
+
+
+
+
+@keyframes animate {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#cont_luces_fijas::after  /*espacio entre foto y luces*/
+{
+    content: "";
+    position: absolute;
+    inset: 3px;
+    background: var(--fondo);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+#flecha  /*contenedor de la imagen*/
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+#flecha img /*imagen*/
+{
+    height: 40px;
+}
+
+
+#cont_flecha  /*luz fija*/
+{
+    margin: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background: var(--degradado);
+    border-radius: 50%;
+    z-index: 3;
+}

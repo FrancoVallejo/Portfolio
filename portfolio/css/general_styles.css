@@ -1,0 +1,23 @@
+
+:root {
+    --fondo: rgb(58, 20, 58);
+    --degradado: linear-gradient(315deg,#00ccff ,#d400d4);
+    --azul: rgb(8, 0, 54);
+}
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--fondo);
+}

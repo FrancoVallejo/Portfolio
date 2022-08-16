@@ -1,0 +1,189 @@
+
+/******     Cosas xd     ******/
+
+
+.box  /*contenedor de luces*/
+{
+    position: relative;
+    width: 80vh;
+    height: 50vh;
+    background: var(--fondo);
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+.box::before  /*luces giratorias*/
+{
+    content: "";
+    position: absolute;
+    inset: -10px 140px;
+    background: var(--degradado);
+    transition: 0.5s;
+    animation: animate 4s infinite linear;
+}
+
+
+
+
+@keyframes animate {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.box::after  /*espacio entre foto y luces*/
+{
+    content: "";
+    position: absolute;
+    inset: 6px;
+    background: var(--fondo);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.circulo  /*contenedor de la imagen*/
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    inset: 7px;
+    z-index: 3;
+    border-radius: 50%;
+    background: var(--azul);
+    overflow: hidden
+}
+
+
+.circulo img /*imagen*/
+{
+    top: 0px;
+    left: 0px;
+    height: 50%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.xd  /*luz fija*/
+{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background: var(--degradado);
+    border-radius: 50%;
+    z-index: 3;
+    overflow: hidden;
+}
+
+
+.content a
+{
+    position: relative;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: white;
+    color: #070a1c;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+
+.content a:hover
+{
+    letter-spacing: 2px;
+}
+
+
+
+/*******************************************************************************************************************/
+
+/******     Foto     ******/
+
+.giratorias  /*contenedor de luces*/
+{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: var(--fondo);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.giratorias::before  /*luces giratorias fijas*/
+{
+    content: "";
+    position: absolute;
+    inset: -10px;
+    background: var(--degradado);
+    transition: 0.5s;
+    animation: animate 4s infinite linear;
+}
+
+
+
+.giratorias::after  /*espacio entre foto y luces*/
+{
+    content: "";
+    position: absolute;
+    inset: 6px;
+    background: var(--fondo);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.cir_imagen  /*contorno de la imagen*/
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    inset: 7px;
+    z-index: 3;
+    border-radius: 50%;
+    overflow: hidden
+}
+
+
+.cir_imagen img /*imagen*/
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 3;
+}
+
+.fija  /*luz fija*/
+{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background: var(--degradado);
+    border-radius: 50%;
+    z-index: 3;
+    overflow: hidden;
+}
+
+/*******************************************************************************************************************/
